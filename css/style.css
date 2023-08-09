@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "VT323"; 
+    src: url("../fonts/VT323-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body {
+    font-family: VT323;
+}
+
+p {
+    font-size: 18px;
+}
+
+body.dark {
+    background-color: black;
+    color: #00FF00;
+}
+
+.container {
+    padding: 20px;
+}
+
+.dangerous {
+    color: red;
+}
+
+a.run-virus {
+    color: #FFFF00;
+    text-decoration: none;
+    border-bottom: 1px dotted #FFFF00;
+}
+
+a.run-virus:hover {
+    color: red;
+    border-bottom: none;
+}
+
+button.run-virus {
+    padding: 5px 15px;
+    background-color: black;
+    border: 3px solid #00FF00;
+    color: #00ff00;
+    font-size: 36px;
+}
+
+button.run-virus:hover {
+    background-color: rgb(160, 0, 0);
+}
+
+.virus-btn {
+    margin-top: 30px;
+}
