@@ -1,3 +1,3 @@
 $(function() {
-    shrek.main();
+    shrek.main($('.run-virus'));
 });
