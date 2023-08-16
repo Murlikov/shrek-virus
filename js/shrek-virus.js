@@ -1,23 +1,23 @@
 var shrek = {
-    main: function(element) {
-        this.events.btnClick.handler(element);
+    main: function(element, event) {
+        this.events.handler(element, event);
     },
     run: function() {
-        $('.antivirus-error').clone().css({
-            top: String(this.getTop($('.antivirus-error'))) + 'px',
-            left: String(this.getLeft($('.antivirus-error'))) + 'px',
+        $('.shrek-error').clone().css({
+            top: String(this.getTop($('.shrek-error'))) + 'px',
+            left: String(this.getLeft($('.shrek-error'))) + 'px',
             display: 'block'
-        }).appendTo('body');
+        }).appendTo('body').find('.close').on('click', function() {
+            $(this).parent().parent().remove();
+        });
 
     },
     events: {
-        btnClick: {
-            handler: function(element) {
-                element.on('click', function() {
-                    shrek.run();
-                    return false;
-                });
-            }
+        handler: function(element, event) {
+            $(element).on(event, function() {
+                shrek.run();
+                return false;
+            });
         }
     },
     getTop: function(modalWindow) {
