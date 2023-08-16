@@ -1,0 +1,22 @@
+.shrek-error {
+    width: 467px;
+    height: 257px;
+    position: absolute;
+    display: none;
+}
+
+.window-body {
+    position: relative;
+}
+
+.shrek-window-body .close {
+    width: 48px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 406px;
+}
+
+.shrek-window-body .close:hover {
+    background-image: url('../images/close-hover.png');
+}
