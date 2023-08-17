@@ -3,11 +3,12 @@ var shrek = {
         this.events.handler(element, event);
     },
     run: function() {
-        $('.shrek-error').clone().css({
+        $('.modal-windows-list .shrek-error').clone().css({
             top: String(this.getTop($('.shrek-error'))) + 'px',
             left: String(this.getLeft($('.shrek-error'))) + 'px',
             display: 'block'
-        }).appendTo('body').find('.close').on('click', function() {
+        }).appendTo('body .container');
+        $('.container .shrek-error').find('.close').on('click', function() {
             $(this).parent().parent().remove();
         });
 
