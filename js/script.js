@@ -1,3 +1,3 @@
 $(function() {
-    shrek.main('.run-shrek', 'click');
+    shrek.main('.run-shrek', 'click', '.modal-windows-list');
 });
